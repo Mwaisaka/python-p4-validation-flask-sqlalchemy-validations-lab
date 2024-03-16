@@ -12,6 +12,7 @@ fake = Faker()
 
 with app.app_context():
 
+    db.create_all()
     Author.query.delete()
     Post.query.delete()
 
